@@ -172,7 +172,7 @@
       width: 130px;
       height: 130px;
       border-radius: 50%;
-      border: 4px solid var(--white);
+      border: 4px solid #4a3040;
       box-shadow: 0 0 0 6px var(--pink-mid), var(--shadow);
       background: linear-gradient(135deg, var(--pink-mid), var(--green-soft));
       display: flex;
@@ -183,7 +183,7 @@
     }
 
     .hero-name {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Poppins', serif;
       font-size: clamp(2.4rem, 6vw, 4rem);
       font-weight: 700;
       color: var(--text-dark);
@@ -226,6 +226,29 @@
       display: flex;
       gap: 12px;
     }
+
+    .hero-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--red);
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.9);
+  object-position: center top;
+}
+.hero-avatar img {
+  transition: transform .3s ease;
+}
+
+.hero-avatar:hover img {
+  transform: scale(1.5);
+}
     .social-btn {
       display: flex;
       align-items: center;
@@ -660,8 +683,10 @@
     <div class="hero-blob blob-3"></div>
     <div class="hero-content">
       <div class="hero-badge">🌸 Welcome to my Profile</div>
-      <div class="hero-avatar">🌸</div>
-      <h1 class="hero-name"> Atma <span>Fauzilla</span></h1>
+      <div class="hero-avatar">
+  <img src="img/foto.png" alt="Atma">
+</div>
+      <h1 class="hero-name"> Atma<span>Fauzilla</span></h1>
       <p class="hero-tagline">Student · Developer · Creative Soul</p>
       <p class="hero-desc">
         Hi! I'm a passionate student from Batam, Indonesia. I love turning ideas into reality through code and design. Currently studying at Politeknik Negri Batam, exploring the world of technology one project at a time. 🌷
