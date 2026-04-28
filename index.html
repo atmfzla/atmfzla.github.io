@@ -186,7 +186,7 @@
       font-family: 'Poppins', serif;
       font-size: clamp(2.4rem, 6vw, 4rem);
       font-weight: 700;
-      color: var(--text-dark);
+      color: #8ec46a;
       line-height: 1.1;
     }
 
@@ -262,7 +262,7 @@
     }
     .social-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(232,116,158,0.25); }
     .social-btn.linkedin { background: var(--pink-accent); color: white; }
-    .social-btn.github { background: var(--text-dark); color: white; }
+    .social-btn.github { background: #8ec46a; color: white; }
 
     /* ===== SECTIONS ===== */
     section {
@@ -437,6 +437,17 @@
       border-radius: 20px;
       font-weight: 500;
     }
+    .project-card-top {
+  height: 140px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-card-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
     /* ===== SKILLS ===== */
     #skills { background: white; }
@@ -505,7 +516,7 @@
 
     /* ===== FOOTER ===== */
     footer {
-      background: var(--text-dark);
+      background: #4a3040;
       color: var(--pink-mid);
       text-align: center;
       padding: 50px 24px 30px;
@@ -756,7 +767,7 @@
       <div class="projects-grid">
 
         <div class="project-card reveal">
-          <div class="project-card-top card-pink">🌸</div>
+          <div class="project-card-top card-pink"> <img src="img/project1.png" alt="Ruang"></div>
           <div class="project-body">
             <div class="project-tag">PBL · Semester 1</div>
             <div class="project-name">RUANG — Rekapitulasi Uang RT/RW</div>
@@ -771,7 +782,9 @@
         </div>
 
         <div class="project-card reveal">
-          <div class="project-card-top card-green">🌿</div>
+          <div class="project-card-top card-green">
+  <img src="img/project2.png" alt="Project">
+</div>
           <div class="project-body">
             <div class="project-tag">PBL · Semester 2</div>
             <div class="project-name">E-Outsourcing — Sistem Absensi Berbasis GPS</div>
@@ -786,7 +799,7 @@
         </div>
 
         <div class="project-card reveal">
-          <div class="project-card-top card-peach">🍑</div>
+          <div class="project-card-top card-peach"><img src="img/project3.png" alt="Do Now!"></div>
           <div class="project-body">
             <div class="project-tag">Project Python</div>
             <div class="project-name">Do Now!</div>
@@ -804,7 +817,7 @@
   <section id="skills">
     <div class="section-inner">
       <p class="section-label reveal">✿ What I Know</p>
-      <h2 class="section-title reveal">Skillset 💪🌸</h2>
+      <h2 class="section-title reveal">Skills🌸</h2>
       <div class="skills-grid">
 
         <div class="skill-group reveal">
